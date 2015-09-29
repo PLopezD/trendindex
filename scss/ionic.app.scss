@@ -20,3 +20,126 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "ibm-colors.scss";
+@import "fonts.scss";
+
+// colors
+$white: #FFFFFF;
+$grey: #F5F5F5;
+$lightgrey: #F9F9FB;
+$coolgrey: #ECF0F2;
+$lightblack:#2F2F2F;
+$warmgrey: color('warm-gray',6);
+$teal: #19A69F;
+nav{
+    background-color:$white;
+    justify-content: center;
+    display:flex;
+    color:$teal;
+    align-items: center;
+    height:50px;
+    flex-wrap: wrap;
+    &:hover {
+        cursor: pointer;
+    }
+}
+#logo{  
+    font-family: "HelvNeueBoldforIBM";
+    color:$teal;
+}
+.head-cards{
+    overflow:hidden;
+    height:0;
+    -webkit-transition:height 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
+    background-color: $lightblack;
+    section{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        align-content:center;
+        aside{
+         margin-top: 10px;
+         margin-bottom: 10px;
+         background-color:$coolgrey;
+         height: 44px;
+         width: 90px;
+         color: $teal;
+         transition-delay: 200ms;
+         -webkit-transition:opacity 1s ease-in;
+         -moz-transition:opacity 1s ease-in;
+         -o-transition:opacity 1s ease-in;
+         transition:opacity 1s ease-in;
+         opacity: 0;
+         p{
+            text-align: center;
+            font-family: "HelvNeueBoldforIBM";
+               // padding-left: 5px;
+           }
+       }
+   } 
+}
+.show {
+    height:65px;
+    & > section > aside{
+       opacity: 1;
+   }
+}   
+
+
+// carrot
+
+.carrot {
+    position: absolute;
+    height: 3em;
+    width: 2em;
+    outline: 0;
+    border: 0;
+    background: none;
+    text-indent: -9999%;  
+    pointer-events: none;
+}
+
+.carrot:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 12px;
+    width: 4px;
+    border-radius: .3em;
+    background: #19A69F;
+    transform-origin: 50%;
+    top: 50%;
+    left: 50%;
+    transition: all 0.25s ease-in-out;
+    transform: translate(75%, -50%) rotate(45deg); 
+}
+
+.carrot:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 12px;
+    width: 4px;
+    border-radius: .3em;
+    background: #19A69F;
+    transform-origin: 50%;
+    top: 50%;
+    left: 50%;
+    transition: all 0.25s ease-in-out;
+    transform: translate(-75%, -50%) rotate(-45deg); 
+}
+
+.open .carrot:before, .open .carrot:after {
+    height: 14px; 
+}
+
+.open .carrot:before {
+    transform: translate(0%, -50%) rotate(-45deg); 
+}
+
+.open .carrot:after {
+    transform: translate(0%, -50%) rotate(45deg);
+}

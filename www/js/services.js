@@ -20,7 +20,6 @@ app.factory('trendService',["$http", function ($http) {
  
 //private  
   function successCallback(data) {
-    // console.log(data.data.trends)
     return data.data.trends
   };
 

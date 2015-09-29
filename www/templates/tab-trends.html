@@ -1,11 +1,24 @@
-<ion-view view-title="Trend Index">
-  <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="trend in trends" type="item-text-wrap" href="#/tab/trend/{{trend.trend_id}}">
-        <img ng-src="{{trend.trend_image}}">
-        <h2>{{trend.trend_name}}</h2>
-        <p>{{trend.momentum}}</p>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+<ion-view hide-nav-bar="true">
+<div>
+	<nav rel="js-nav"> 
+		<div id="logo" rel="js-nav" ng-click="data.openMenu = !data.openMenu;" ng-class="{'open': data.openMenu}">Watson Trend</div><span class="carrot"></span>
+	</nav>
+	<div class="head-cards" ng-class="{'show': data.openMenu}" rel="js-drawer">
+		<section>
+			<aside><p>Toys</p></aside>
+			<aside><p>Electronics</p></aside>
+			<aside><p>Health</p></aside>
+		</section>
+	</div>
+</div>
+
+<ion-list>
+<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="trend in trends" type="item-text-wrap" href="#/tab/trend/{{trend.trend_id}}">
+<img ng-src="{{trend.trend_image}}">
+<h2>{{trend.trend_name}}</h2>
+<p>{{trend.momentum}}</p>
+</ion-item>
+</ion-list>
+</div>
 </ion-view>
+

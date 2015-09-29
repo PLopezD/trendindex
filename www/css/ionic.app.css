@@ -7699,3 +7699,120 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+@font-face {
+  font-family: 'HelvNeueBoldforIBM';
+  src: url('../fonts/HelvNeueBoldforIBM.otf'); }
+
+@font-face {
+  font-family: 'HelvNeueLightforIBM';
+  src: url('../fonts/HelvNeueLightforIBM.otf'); }
+
+@font-face {
+  font-family: 'HelvNeueMediumforIBM';
+  src: url('../fonts/HelvNeueMediumforIBM.otf'); }
+
+@font-face {
+  font-family: 'LubalinDemiforIBM';
+  src: url('../fonts/LubalinDemiforIBM.otf'); }
+
+@font-face {
+  font-family: 'LubalinDemiforIBM';
+  src: url('../fonts/LubalinDemiforIBM.otf'); }
+
+nav {
+  background-color: #FFFFFF;
+  justify-content: center;
+  display: flex;
+  color: #19A69F;
+  align-items: center;
+  height: 50px;
+  flex-wrap: wrap; }
+  nav:hover {
+    cursor: pointer; }
+
+#logo {
+  font-family: "HelvNeueBoldforIBM";
+  color: #19A69F; }
+
+.head-cards {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+  background-color: #2F2F2F; }
+  .head-cards section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center; }
+    .head-cards section aside {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ECF0F2;
+      height: 44px;
+      width: 90px;
+      color: #19A69F;
+      transition-delay: 200ms;
+      -webkit-transition: opacity 1s ease-in;
+      -moz-transition: opacity 1s ease-in;
+      -o-transition: opacity 1s ease-in;
+      transition: opacity 1s ease-in;
+      opacity: 0; }
+      .head-cards section aside p {
+        text-align: center;
+        font-family: "HelvNeueBoldforIBM"; }
+
+.show {
+  height: 65px; }
+  .show > section > aside {
+    opacity: 1; }
+
+.carrot {
+  position: absolute;
+  height: 3em;
+  width: 2em;
+  outline: 0;
+  border: 0;
+  background: none;
+  text-indent: -9999%;
+  pointer-events: none; }
+
+.carrot:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 12px;
+  width: 4px;
+  border-radius: .3em;
+  background: #19A69F;
+  transform-origin: 50%;
+  top: 50%;
+  left: 50%;
+  transition: all 0.25s ease-in-out;
+  transform: translate(75%, -50%) rotate(45deg); }
+
+.carrot:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 12px;
+  width: 4px;
+  border-radius: .3em;
+  background: #19A69F;
+  transform-origin: 50%;
+  top: 50%;
+  left: 50%;
+  transition: all 0.25s ease-in-out;
+  transform: translate(-75%, -50%) rotate(-45deg); }
+
+.open .carrot:before, .open .carrot:after {
+  height: 14px; }
+
+.open .carrot:before {
+  transform: translate(0%, -50%) rotate(-45deg); }
+
+.open .carrot:after {
+  transform: translate(0%, -50%) rotate(45deg); }

@@ -6,6 +6,8 @@ app.controller('BookmarkCtrl', function($scope) {
 })
 
 .controller('TrendsCtrl', ["$scope","trendService", function($scope, trendService) {
+  
+    
    trendService.getTrends().then(function (data) {
      $scope.trends = data
    }) 
