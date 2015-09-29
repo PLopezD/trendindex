@@ -1,4 +1,12 @@
 {
   "name": "trendindex",
-  "app_id": "729f0a2e"
+  "app_id": "729f0a2e",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

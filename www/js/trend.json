@@ -1,0 +1,25 @@
+{
+	"trends" : [
+	{
+		"trend_id" : "0",
+		"trend_name" : "Go Pro Cameras",
+		"trend_image" : "../img/pro.png",	
+		"momentum" : "On the rise",
+		"tag" : "Consumer Electronics"	
+	},
+	{
+		"trend_id" : "1",
+		"trend_name" : "Star wars bots",
+		"trend_image" : "../img/star.png",	
+		"momentum" : "Rising Interest",
+		"tag" : "Toys"	
+	},
+	{
+		"trend_id" : "2",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	}	
+	]
+}

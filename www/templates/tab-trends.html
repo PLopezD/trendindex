@@ -1,0 +1,11 @@
+<ion-view view-title="Trend Index">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="trend in trends" type="item-text-wrap" href="#/tab/trend/{{trend.trend_id}}">
+        <img ng-src="{{trend.trend_image}}">
+        <h2>{{trend.trend_name}}</h2>
+        <p>{{trend.momentum}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
