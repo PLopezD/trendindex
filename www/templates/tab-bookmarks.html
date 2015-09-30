@@ -1,7 +1,19 @@
 <ion-view view-title="Bookmarks">
   <ion-content class="padding">
-    <div class="list card">
+<!--     <div class="list card">
       <div class="item item-body">ng-repeat through bookmarks service</div>
     </div>
+ -->
+    <ion-list>
+<ion-item class="card item-remove-animate item-avatar item-icon-right" ng-repeat="trend in trends" type="item-text-wrap" href="#/tab/trend/{{trend.trend_id}}">
+<img ng-src="{{trend.trend_image}}">
+<h2>{{trend.trend_name}}</h2>
+<p>{{trend.momentum}}</p>
+<h4>{{trend.tag}}</h4>
+<button class="button button-clear icon ion-bookmark button"
+        ng-click="bookmarkTrend(trend)" </button>
+
+</ion-item>
+</ion-list>
   </ion-content>
 </ion-view>

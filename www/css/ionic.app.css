@@ -7720,6 +7720,9 @@ a.button {
   font-family: 'LubalinDemiforIBM';
   src: url('../fonts/LubalinDemiforIBM.otf'); }
 
+aside .active {
+  background-color: red; }
+
 nav {
   background-color: #FFFFFF;
   justify-content: center;
@@ -7816,3 +7819,6 @@ nav {
 
 .open .carrot:after {
   transform: translate(0%, -50%) rotate(45deg); }
+.active {
+  background-color:blue !important;
+}

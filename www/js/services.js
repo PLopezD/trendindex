@@ -31,5 +31,10 @@ app.factory('trendService',["$http", function ($http) {
     getTrends: getTrends,
     getTrend: getTrend
     }
-}])
+}]);
 
+app.factory('bookmarkService',["$http", function ($http) {
+  return {
+    bookmarks:[]
+  }
+}])

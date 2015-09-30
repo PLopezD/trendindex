@@ -6,17 +6,20 @@
 	</nav>
 	<div class="head-cards" ng-class="{'show': data.openMenu}" rel="js-drawer">
 		<section>
-			<aside><p>Toys</p></aside>
-			<aside><p>Electronics</p></aside>
-			<aside><p>Health</p></aside>
+			<aside ng-class="{'active': tag == 'toys'}" ng-click="filter('toys')"><p>Toys</p></aside>
+			<aside ng-class="{'active': tag == 'electronics'}" ng-click="filter('electronics')"><p>Electronics</p></aside>
+			<aside ng-class="{'active': tag == 'health'}" ng-click="filter('health')"><p>Health</p></aside>
 		</section>
 	</div>
 </div>
 <ion-list>
-<ion-item class="card item-remove-animate item-avatar item-icon-right" ng-repeat="trend in trends" type="item-text-wrap" href="#/tab/trend/{{trend.trend_id}}">
+<ion-item class="card item-remove-animate item-avatar item-icon-right" ng-repeat="trend in trends | filter:tag" type="item-text-wrap" href="#/tab/trend/{{trend.trend_id}}">
 <img ng-src="{{trend.trend_image}}">
 <h2>{{trend.trend_name}}</h2>
 <p>{{trend.momentum}}</p>
+<h4>{{trend.tag}}</h4>
+<button class="button button-clear icon ion-bookmark button" ng-click="bookmarkTrend(trend); $event.preventDefault()"</button>
+
 </ion-item>
 </ion-list>
 </ion-content>
