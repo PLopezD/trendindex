@@ -2,11 +2,11 @@ var app = angular.module('starter.controllers', [])
 
 app.controller('BookmarkCtrl', function($scope) {
 
-  console.log("msg")
+  console.log("in BookmarkCtrl")
 })
 
 .controller('TrendsCtrl', ["$scope","trendService", function($scope, trendService) {
-  
+  $scope.filters = {}
     
    trendService.getTrends().then(function (data) {
      $scope.trends = data

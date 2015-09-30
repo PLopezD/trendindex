@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'HelvNeueBoldforIBM';
+  src: url('../fonts/HelvNeueBoldforIBM.otf'); }
+
+@font-face {
+  font-family: 'HelvNeueLightforIBM';
+  src: url('../fonts/HelvNeueLightforIBM.otf'); }
+
+@font-face {
+  font-family: 'HelvNeueMediumforIBM';
+  src: url('../fonts/HelvNeueMediumforIBM.otf'); }
+
+@font-face {
+  font-family: 'LubalinDemiforIBM';
+  src: url('../fonts/LubalinDemiforIBM.otf'); }
+
+@font-face {
+  font-family: 'LubalinDemiforIBM';
+  src: url('../fonts/LubalinDemiforIBM.otf'); }
+
+.masthead {
+  background: #333333; }
+
+.site-title {
+  color: white; }
+
+.card {
+  background: white; }
+
+.overlay {
+  background-color: gray;
+  opacity: .8; }
+
+.card a {
+  color: black;
+  text-decoration: none; }
+
+.card a:hover {
+  box-shadow: 3px 3px 8px #b3b3b3; }
+
+.card-content {
+  padding: 1.4em; }
+
+.card-content h2 {
+  font-family: "HelvNeueBoldforIBM";
+  color: white;
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-weight: normal; }
+
+.card-content p {
+  font-family: "HelvNeueBoldforIBM";
+  color: white;
+  font-size: 95%; }
+
+/* Flexbox stuff */
+@media screen and (min-width: 40em) {
+  .cards {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: -1em; }
+  .card {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 calc(50% - .5em);
+    -ms-flex: 0 1 calc(50% - .5em);
+    flex: 0 1 calc(50% - .5em);
+    margin-bottom: 1em; } }
+
+@media screen and (min-width: 60em) {
+  .cards {
+    margin-top: inherit; }
+  .card {
+    -webkit-flex: 0 1 calc(33% - 1em);
+    -ms-flex: 0 1 calc(33% - 1em);
+    flex: 0 1 calc(33% - 1em);
+    margin-bottom: 2em; } }

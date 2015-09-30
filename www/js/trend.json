@@ -20,6 +20,61 @@
 		"trend_image" : "../img/pineapple.png",	
 		"momentum" : "Peak Absorbtion",
 		"tag" : "Health"	
-	}	
+	},
+	{
+		"trend_id" : "3",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},
+	{
+		"trend_id" : "4",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},
+	{
+		"trend_id" : "5",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},
+	{
+		"trend_id" : "6",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},
+	{
+		"trend_id" : "7",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},	
+	{
+		"trend_id" : "8",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},
+	{
+		"trend_id" : "9",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	},{
+		"trend_id" : "10",
+		"trend_name" : "Pineapple good for health",
+		"trend_image" : "../img/pineapple.png",	
+		"momentum" : "Peak Absorbtion",
+		"tag" : "Health"	
+	}
 	]
 }
