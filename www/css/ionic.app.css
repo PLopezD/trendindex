@@ -7819,6 +7819,3 @@ nav {
 
 .open .carrot:after {
   transform: translate(0%, -50%) rotate(45deg); }
-.active {
-  background-color:blue !important;
-}
